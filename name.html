@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+            margin-top: 40px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #333;
+            margin: 15px 0;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+
+        button {
+            margin: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: beige;
+            border: 1px solid #888;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Profile Page</h1>
+
+    <!-- Replace the image URL below with your own photo -->
+    <!-- Option 1: Online image -->
+    <!-- <img src="https://yourwebsite.com/yourphoto.jpg" alt="Profile Photo" class="profile-photo"> -->
+
+    <!-- Option 2: Local image in the same folder -->
+    <img src="myphoto.jpg" alt="Profile Photo" class="profile-photo">
+
+    <p>My name is <span class="bold-text">Sonika</span>. I am currently pursuing Bachelors in BVRITH.My hobbies include cooking and listening to music.</p>
+
+    <button onclick="sayHello()">Say Hello</button>
+
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function sayHello() {
+            let name = prompt("What is your name?");
+            if (name) {
+                alert("Hello, " + name + "!");
+            } else {
+                alert("Hello, there!");
+            }
+        }
+    </script>
+</body>
+</html>
